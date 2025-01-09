@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoking Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Smoking Habit Tracker</h1>
+    <button id="smoke-button" class="smoke-button">Track Smoking (Now)</button>
+    <div class="manual-entry">
+      <label for="manual-hour">Manual Entry (HH:MM):</label>
+      <select id="manual-hour"></select>:
+      <select id="manual-minute"></select>
+      <button id="add-manual" class="manual-button">Add Manual Entry</button>
+    </div>
+    <div class="content">
+      <div class="chart-container">
+        <canvas id="smokingChart" width="1800" height="600"></canvas>
+      </div>
+      <div class="entry-log" id="entry-log">
+        <h2>Smoking Log</h2>
+        <p id="cigarette-counter">Total Cigarettes Smoked: 0</p>
+        <ul id="log-list"></ul>
+      </div>
+    </div>
+    <button id="clear-graph-button" class="clear-button">Clear Graph</button>
+    <button id="delete-last-button" class="delete-button">Delete Last Entry</button>
+    <div id="logs" class="logs"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
